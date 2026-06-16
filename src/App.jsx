@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import Dashboard from "./pages/Dashboard"
 import Tasks from "./pages/Tasks"
+import TasksMenu from "./pages/TasksMenu"
 import TaskDetails from "./pages/TaskDetails"
 import About from "./pages/About"
 import NotFound from "./pages/NotFound"
@@ -28,6 +29,11 @@ function App() {
      <Route 
       path="/tasks"
       element={<Tasks />}
+      />
+
+      <Route
+        path="/tasks-menu"
+        element={<TasksMenu />}
       />
      
       <Route path="/tasks/:id" element={<TaskDetails />}></Route>
